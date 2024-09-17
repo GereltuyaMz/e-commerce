@@ -24,10 +24,10 @@ import {
   Settings,
   SunMedium,
   Trash,
-  Twitter,
   User,
-  User2Icon,
   UserX2Icon,
+  UserPlus,
+  PackagePlus,
   X
 } from 'lucide-react';
 
@@ -38,13 +38,14 @@ export const Icons = {
   logo: Command,
   login: LogIn,
   close: X,
-  profile: User2Icon,
+  profile: UserPlus,
   spinner: Loader2,
   kanban: CircuitBoardIcon,
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
   trash: Trash,
   employee: UserX2Icon,
+  product: PackagePlus,
   post: FileText,
   page: File,
   media: Image,
@@ -77,6 +78,5 @@ export const Icons = {
       ></path>
     </svg>
   ),
-  twitter: Twitter,
   check: Check
 };

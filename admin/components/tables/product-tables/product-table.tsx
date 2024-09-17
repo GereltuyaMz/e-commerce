@@ -1,5 +1,8 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+
 import {
   Table,
   TableBody,
@@ -8,45 +11,45 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table';
-import { Input } from './input';
-import { Button } from './button';
-import { ScrollArea, ScrollBar } from './scroll-area';
-import { User } from '@/constants/data';
-import { CellAction } from '../tables/user-tables/cell-action';
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
+import { Product } from '@/constants/data';
+import { CellAction } from './cell-action';
 
 interface DataTableProps {
-  data: User[];
+  data: Product[];
   searchKey: string;
 }
 
-export function DataTable({ data, searchKey }: DataTableProps) {
+export function ProductTable({ data, searchKey }: DataTableProps) {
   return (
     <>
       <Input
         placeholder={`Search ${searchKey}...`}
         className="w-full md:max-w-sm"
       />
-      <ScrollArea className="h-[calc(80vh-220px)] rounded-md border md:h-[calc(80dvh-200px)]">
+      <ScrollArea className="h-[calc(80vh-220px)] rounded-md border">
         <Table className="relative">
           <TableHeader>
             <TableRow>
               <TableHead>Name</TableHead>
-              <TableHead>Department</TableHead>
-              <TableHead>Role</TableHead>
-              <TableHead>Status</TableHead>
+              <TableHead>Category</TableHead>
+              <TableHead>Price</TableHead>
+              <TableHead>Quantity</TableHead>
+              <TableHead>Description</TableHead>
               <TableHead>Action</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
-            {data.map((user) => (
-              <TableRow key={user.id}>
-                <TableCell>{user.name}</TableCell>
-                <TableCell>{user.company}</TableCell>
-                <TableCell>{user.role}</TableCell>
-                <TableCell>{user.status}</TableCell>
+            {data.map((product) => (
+              <TableRow key={product.id}>
+                <TableCell>{product.productName}</TableCell>
+                <TableCell>{product.category}</TableCell>
+                <TableCell>{product.price}$</TableCell>
+                <TableCell>{product.qty}</TableCell>
+                <TableCell>{product.description}</TableCell>
                 <TableCell>
-                  <CellAction id={user.id} />
+                  <CellAction id={product.id} />
                 </TableCell>
               </TableRow>
             ))}
