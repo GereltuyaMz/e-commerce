@@ -14,13 +14,7 @@ const breadcrumbItems = [
   { title: 'Product', link: '/dashboard/product' }
 ];
 
-type paramsProps = {
-  searchParams: {
-    [key: string]: string | string[] | undefined;
-  };
-};
-
-export default async function page({ searchParams }: paramsProps) {
+export default async function page() {
   return (
     <PageContainer>
       <div className="space-y-4">
