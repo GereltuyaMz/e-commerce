@@ -12,14 +12,14 @@ const LogIn = () => {
 					<Input
 						type="email"
 						placeholder="Имэйл хаяг"
-						className="rounded-large bg-white shadow-sm"
+						className="rounded-[18px] bg-white shadow-sm"
 					/>
 					<Input
 						type="password"
 						placeholder="Нууц үг"
-						className="rounded-large bg-white shadow-sm"
+						className="rounded-[18px] bg-white shadow-sm"
 					/>
-					<Button className="bg-blue-primary rounded-large">Нэвтрэх</Button>
+					<Button className="bg-blue-primary rounded-[18px]">Нэвтрэх</Button>
 				</div>
 				<div className="flex flex-col gap-12 mt-4">
 					<Link href="/forgetpass" className="text-center text-sm">
@@ -30,7 +30,7 @@ const LogIn = () => {
 					<Link href="/signup">
 						<Button
 							variant="outline"
-							className="border-blue-primary text-blue-primary rounded-large w-full bg-white"
+							className="border-blue-primary text-blue-primary rounded-[18px] w-full bg-white"
 						>
 							Бүртгүүлэх
 						</Button>
