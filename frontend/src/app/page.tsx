@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<main>
 			<Hero />
-			<div className="mt-6 max-w-[1100px] mx-auto grid grid-cols-4 gap-5">
+			<div className="mt-6 max-w-[1100px] mx-auto grid grid-cols-4 gap-y-12 gap-x-5">
 				{products.map((product, index) => {
 					return (
 						<>
@@ -16,6 +16,8 @@ export default function Home() {
 									name={product.name}
 									price={product.price}
 									image={product.image}
+									originalPrice={product.originalPrice}
+									discount={product.discount}
 								/>
 							) : (
 								<ProductCard
@@ -23,6 +25,8 @@ export default function Home() {
 									name={product.name}
 									price={product.price}
 									image={product.image}
+									originalPrice={product.originalPrice}
+									discount={product.discount}
 								/>
 							)}
 						</>

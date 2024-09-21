@@ -1,7 +1,16 @@
+export type Product = {
+	name: string;
+	price: number;
+	image: string;
+	originalPrice?: number | undefined;
+	discount?: string;
+	featured?: boolean;
+};
+
 export const products: Product[] = [
 	{
 		name: "The Prompt Magazine",
-		price: 120000,
+		price: 35000,
 		image: "/products/image1.png",
 	},
 	{
@@ -74,12 +83,3 @@ export const products: Product[] = [
 		image: "/products/image6.png",
 	},
 ];
-
-export type Product = {
-	name: string;
-	price: number;
-	image: string;
-	originalPrice?: number;
-	discount?: string;
-	featured?: boolean;
-};
