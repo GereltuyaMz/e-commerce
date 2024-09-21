@@ -10,10 +10,10 @@ export const Header = () => {
 				<div className="flex items-center gap-1">
 					<Image src="./logo.svg" alt="logo" width={32} height={27} />
 					<Link href='/'>
-						<span className="">ECOMMERCE</span>
+						<span>ECOMMERCE</span>
 					</Link>
 				</div>
-				<Link href="/category" className="">
+				<Link href="/category">
 					Ангилал
 				</Link>
 			</div>
@@ -27,7 +27,7 @@ export const Header = () => {
 				<input
 					type="text"
 					placeholder="Бүтээгдэхүүн хайх"
-					className="rounded-2xl text-sm pl-8 py-2 bg-[#18181B] w-[260px] "
+					className="rounded-2xl text-sm pl-8 py-2 bg-[#18181B] w-[260px]"
 				/>
 			</div>
 			<div className="flex items-center gap-3">
