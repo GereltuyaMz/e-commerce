@@ -10,7 +10,7 @@ import {
 
 export const Footer = () => {
 	return (
-		<footer className="bg-black text-white py-16 mt-24">
+		<footer className="bg-black text-white py-16">
 			<div className="max-w-[1000px] mx-auto">
 				<div className="flex justify-between items-center">
 					<Image src="./logo.svg" alt="logo" width={41} height={34} />

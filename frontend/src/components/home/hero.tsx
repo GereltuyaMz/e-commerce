@@ -1,6 +1,6 @@
 export const Hero = () => {
 	return (
-		<div
+		<section
 			style={{
 				backgroundImage: `url('/hero.png')`,
 				backgroundSize: "cover",
@@ -14,6 +14,6 @@ export const Hero = () => {
 				<h1 className="text-2xl font-medium">Wildflower Hoodie</h1>
 				<h1 className="font-bold text-2xl">120’000₮</h1>
 			</div>
-		</div>
+		</section>
 	);
 };

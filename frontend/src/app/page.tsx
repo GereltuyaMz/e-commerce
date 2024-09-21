@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<main>
 			<Hero />
-			<div className="mt-6 max-w-[1100px] mx-auto grid grid-cols-4 gap-y-12 gap-x-5">
+			<section className="mt-6 mb-24 max-w-[1100px] mx-auto grid grid-cols-4 gap-y-12 gap-x-5">
 				{products.map((product, index) => {
 					return (
 						<>
@@ -32,7 +32,7 @@ export default function Home() {
 						</>
 					);
 				})}
-			</div>
+			</section>
 		</main>
 	);
 }

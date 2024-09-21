@@ -10,11 +10,11 @@ export const Header = () => {
 				<div className="flex items-center gap-1">
 					<Image src="./logo.svg" alt="logo" width={32} height={27} />
 					<Link href="/">
-						<span>ECOMMERCE</span>
+						<span className="text-white-primary">ECOMMERCE</span>
 					</Link>
 				</div>
-				<Link href="/category" className="text-white/[.75]">
-					Ангилал
+				<Link href="/category">
+					<span className="text-muted-foreground">Ангилал</span>
 				</Link>
 			</div>
 			<div className="flex items-center relative">
@@ -38,10 +38,17 @@ export const Header = () => {
 					className="mr-3"
 					size={20}
 				/>
-				<Button variant="outline" className="rounded-3xl border-blue-primary">
-					Бүртгүүлэх
-				</Button>
-				<Button className="bg-blue-primary rounded-3xl">Нэвтрэх</Button>
+				<Link href="/signup">
+					<Button
+						variant="outline"
+						className="rounded-3xl border-blue-primary text-white-primary"
+					>
+						Бүртгүүлэх
+					</Button>
+				</Link>
+				<Link href="/login">
+					<Button className="bg-blue-primary rounded-3xl">Нэвтрэх</Button>
+				</Link>
 			</div>
 		</header>
 	);

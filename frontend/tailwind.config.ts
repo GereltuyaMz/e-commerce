@@ -12,6 +12,7 @@ const config: Config = {
 			colors: {
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
+				layer: "var(--layer)",
 				card: {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
@@ -51,13 +52,11 @@ const config: Config = {
 					"5": "hsl(var(--chart-5))",
 				},
 				blue: {
-					primary: "#2563EB",
+					primary: "var(--blue-primary)",
 				},
 			},
 			borderRadius: {
-				lg: "var(--radius)",
-				md: "calc(var(--radius) - 2px)",
-				sm: "calc(var(--radius) - 4px)",
+				large: "18px",
 			},
 			keyframes: {
 				"accordion-down": {
