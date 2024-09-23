@@ -21,12 +21,12 @@ const NewPass = () => {
           <Input
             type="password"
             placeholder="Шинэ нууц үг"
-            className="rounded-[18px] bg-white shadow-sm"
+            className="input-primary"
           />
           <Input
             type="password"
             placeholder="Шинэ нууц үг давтах"
-            className="rounded-[18px] bg-white shadow-sm"
+            className="input-primary"
           />
           <ul className="list-disc pl-5 text-muted-foreground text-xs font-light leading-5 flex flex-col gap-0.5">
             <li>Том үсэг орсон байх</li>
@@ -34,10 +34,7 @@ const NewPass = () => {
             <li>Тоо орсон байх</li>
             <li>Тэмдэгт орсон байх</li>
           </ul>
-          <Button
-            className="bg-blue-primary rounded-[18px]"
-            onClick={handleNewPassword}
-          >
+          <Button className="button-primary" onClick={handleNewPassword}>
             Үүсгэх
           </Button>
         </div>

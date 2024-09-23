@@ -12,14 +12,14 @@ const LogIn = () => {
           <Input
             type="email"
             placeholder="Имэйл хаяг"
-            className="rounded-[18px] bg-white shadow-sm"
+            className="input-primary"
           />
           <Input
             type="password"
             placeholder="Нууц үг"
-            className="rounded-[18px] bg-white shadow-sm"
+            className="input-primary"
           />
-          <Button className="bg-blue-primary rounded-[18px]">Нэвтрэх</Button>
+          <Button className="button-primary">Нэвтрэх</Button>
         </div>
         <div className="flex flex-col gap-12 mt-4">
           <Link href="/forgetpass/email" className="text-center text-sm">

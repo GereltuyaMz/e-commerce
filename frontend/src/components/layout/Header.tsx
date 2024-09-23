@@ -2,6 +2,7 @@ import { Heart, Search, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 
 export const Header = () => {
   return (
@@ -24,10 +25,10 @@ export const Header = () => {
           className="absolute left-2"
           strokeWidth={1}
         />
-        <input
+        <Input
           type="text"
+          className="rounded-2xl pl-8 py-2 bg-[#18181B] w-[260px] placeholder:text-muted-foreground border-none"
           placeholder="Бүтээгдэхүүн хайх"
-          className="rounded-2xl pl-8 py-2 bg-[#18181B] w-[260px] placeholder:text-muted-foreground"
         />
       </div>
       <div className="flex items-center gap-3">
@@ -47,7 +48,7 @@ export const Header = () => {
           </Button>
         </Link>
         <Link href="/login">
-          <Button className="bg-blue-primary rounded-3xl">Нэвтрэх</Button>
+          <Button className="button-primary">Нэвтрэх</Button>
         </Link>
       </div>
     </header>

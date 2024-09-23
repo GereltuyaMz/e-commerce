@@ -93,3 +93,11 @@ body {
         @apply bg-background text-foreground;
     }
 }
+
+.input-primary {
+    @apply rounded-[18px] bg-white shadow-sm;
+}
+
+.button-primary {
+    @apply bg-blue-primary rounded-3xl;
+}

@@ -21,12 +21,9 @@ const Email = () => {
           <Input
             type="email"
             placeholder="Имэйл хаяг оруулах"
-            className="rounded-[18px] bg-white shadow-sm"
+            className="input-primary"
           />
-          <Button
-            className="bg-blue-primary rounded-[18px]"
-            onClick={handleSendOtp}
-          >
+          <Button className="button-primary" onClick={handleSendOtp}>
             Илгээх
           </Button>
         </div>
