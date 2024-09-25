@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SignUp = () => {
   return (
-    <div className="h-[700px] flex flex-col justify-center items-center bg-layer">
+    <div className="2xl:h-[calc(100vh-350px)] h-[calc(100vh-200px)] flex flex-col justify-center items-center bg-layer">
       <div className="w-[320px]">
         <h1 className="text-2xl font-semibold mb-8 text-center">Бүртгүүлэх</h1>
         <div className="flex flex-col gap-4 text-sm">

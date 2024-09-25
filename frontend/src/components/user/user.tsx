@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 
 export const User = () => {
   return (
-    <div className="h-screen w-[620px]">
+    <div className="w-[620px]">
       <h1 className="text-lg font-bold">Хэрэглэгчийн хэсэг</h1>
       <Separator className="my-6" />
       <div className="flex flex-col gap-4">

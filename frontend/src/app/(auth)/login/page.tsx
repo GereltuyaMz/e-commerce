@@ -5,7 +5,7 @@ import React from "react";
 
 const LogIn = () => {
   return (
-    <div className="h-[700px] flex flex-col justify-center items-center">
+    <div className="h-[calc(100vh-350px)] flex flex-col justify-center items-center">
       <div className="w-[320px]">
         <h1 className="text-2xl font-semibold mb-8 text-center">Нэвтрэх</h1>
         <div className="flex flex-col gap-4 text-sm">

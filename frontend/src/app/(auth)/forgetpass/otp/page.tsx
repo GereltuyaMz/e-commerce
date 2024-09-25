@@ -37,7 +37,7 @@ const Otp = () => {
   };
 
   return (
-    <div className="h-[700px] flex flex-col items-center mt-24">
+    <div className="h-[calc(100vh-350px)] flex flex-col items-center mt-24">
       <EmailIcon />
       <h1 className="mt-7 text-2xl font-bold">Баталгаажуулах</h1>
       <p className="mt-2 mb-6 text-text-primary">

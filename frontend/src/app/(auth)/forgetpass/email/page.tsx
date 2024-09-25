@@ -12,7 +12,7 @@ const Email = () => {
   };
 
   return (
-    <div className="h-[700px] flex flex-col items-center">
+    <div className="h-[calc(100vh-350px)] flex flex-col items-center">
       <div className="w-[320px] mt-24">
         <h1 className="text-2xl font-semibold mb-8 text-center">
           Нууц үг сэргээх
