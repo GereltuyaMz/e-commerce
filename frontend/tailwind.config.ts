@@ -56,6 +56,7 @@ const config: Config = {
         },
         text: {
           primary: "var(--text-primary)",
+          helper: "var(--text-helper)",
         },
       },
       borderRadius: {

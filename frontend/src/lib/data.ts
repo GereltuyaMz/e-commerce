@@ -5,6 +5,12 @@ export type Product = {
   discount: number;
 };
 
+export type WishListProduct = {
+  name: string;
+  price: number;
+  image: string;
+};
+
 export const products: Product[] = [
   {
     name: "The Prompt Magazine",
@@ -89,5 +95,23 @@ export const products: Product[] = [
     price: 120000,
     image: "/products/image6.png",
     discount: 0,
+  },
+];
+
+export const wishlistProducts: WishListProduct[] = [
+  {
+    name: "Chunky Glyph Tee",
+    price: 120000,
+    image: "/wishlist/wishlist1.png",
+  },
+  {
+    name: "Doodle Hoodie",
+    price: 120000,
+    image: "/wishlist/wishlist2.png",
+  },
+  {
+    name: "Local Styles Crewneck",
+    price: 120000,
+    image: "/wishlist/wishlist3.png",
   },
 ];
