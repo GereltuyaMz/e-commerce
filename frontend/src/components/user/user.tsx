@@ -12,7 +12,7 @@ export const User = () => {
       <div className="flex flex-col gap-4">
         <div>
           <Label>Овог:</Label>
-          <Input type="text" className="input-primary mt-2 " />
+          <Input type="text" className="input-primary mt-2" />
         </div>
         <div>
           <Label>Нэр:</Label>
