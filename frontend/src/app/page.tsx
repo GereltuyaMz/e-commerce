@@ -28,21 +28,9 @@ export default async function Home() {
 					return (
 						<>
 							{index === 6 || index === 7 ? (
-								<FeaturedProductCard
-									key={index}
-									name={product.name}
-									price={product.price}
-									images={product.images}
-									discount={product.discount}
-								/>
+								<FeaturedProductCard key={index} {...product} />
 							) : (
-								<ProductCard
-									key={index}
-									name={product.name}
-									price={product.price}
-									images={product.images}
-									discount={product.discount}
-								/>
+								<ProductCard key={index} {...product} />
 							)}
 						</>
 					);
