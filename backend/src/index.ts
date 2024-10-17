@@ -5,6 +5,7 @@ import { connectDB } from "./config/db";
 import authRouter from "./routes/auth-route";
 import productRouter from "./routes/product-router";
 import categoryRouter from "./routes/category-route";
+import cartRouter from "./routes/cart-route";
 // import nodemailer from "nodemailer";
 
 dotenv.config();
@@ -19,6 +20,7 @@ app.use(cors());
 app.use("/auth", authRouter);
 app.use("/product", productRouter);
 app.use("/category", categoryRouter);
+app.use("/cart", cartRouter);
 
 // const transport = nodemailer.createTransport({
 //   service: "gmail",
@@ -42,5 +44,5 @@ app.use("/category", categoryRouter);
 app.get("/", (req, res) => res.send("Service is live!!"));
 
 app.listen(port, () => {
-	console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on http://localhost:${port}`);
 });
